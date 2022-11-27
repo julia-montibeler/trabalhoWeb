@@ -33,8 +33,8 @@
 		<div class="container">                
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
-					<a class="ativaNoHover" href="index.html"></a>
-					<h1 class="header_logo">CAFÉ MARGOSO</h1>
+					<a class="ativaNoHover" href="index.html" title="logo do site, um desenho de café"></a>
+					<span style="font-size:40px" class="header_logo">CAFÉ MARGOSO</span>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -56,198 +56,208 @@
 		</div>
 	</header>
 
-    <div class="row align-items-start">
+  <div class="row align-items-start">
 
-      <!-- sidebar -->
-      <div class="d-flex flex-column sidebar col-md-3" style="height: 30%;">
-          <span style="padding-left: 20px;">Produtos</span>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item tipo-item">
-            <button class="categoria" onclick="ativaQuentes()">
-              Bebidas Quentes
-            </button>
-          </li>
-          <li class="nav-item tipo-item">
-            <button class="categoria" onclick="ativaGeladas()">
-              Bebidas geladas
-            </button>
-          </li>
-          <li class="nav-item tipo-item">
-            <button class="categoria" onclick="ativaDoces()">
-              Doces
-            </button>
-          </li>
-          <li class="nav-item tipo-item">
-            <button class="categoria" onclick="ativaSalgados()">
-              Salgados
-            </button>
-          </li>
-        </ul>
-        <hr>
-      </div>
+    <!-- sidebar -->
+    <div class="d-flex flex-column sidebar col-md-3" style="height: 30%;">
+        <h3 class="sidebar-title">Produtos</h3>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item tipo-item">
+          <button class="categoria" onclick="ativaQuentes()">
+            Bebidas Quentes
+          </button>
+        </li>
+        <li class="nav-item tipo-item">
+          <button class="categoria" onclick="ativaGeladas()">
+            Bebidas geladas
+          </button>
+        </li>
+        <li class="nav-item tipo-item">
+          <button class="categoria" onclick="ativaDoces()">
+            Doces
+          </button>
+        </li>
+        <li class="nav-item tipo-item">
+          <button class="categoria" onclick="ativaSalgados()">
+            Salgados
+          </button>
+        </li>
+      </ul>
+      <hr>
+    </div>
+
+    <!--Produtos-->
+
+    <div class="produtos container col-md-8">
 
       <!--Bebidas Quentes-->
-      <div class="produtos container col-md-8">
-        <div id="bebidasQuentes">
-          <div class="item">
-            <img class="produto" src="images/produtos/cappuccino.jpg" alt="cappuccino em um copo branco">
-            <div class="descricao">
-              <h6>cappuccino</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/expresso.jpg" alt="dois cafés expressos servidos em copos de vidro">
-            <div class="descricao">
-              <h6>expresso</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/chocolatequente.jpg" alt="Chocolate quente">
-            <div class="descricao">
-              <h6>Chocolate quente</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item" style="margin-right: 0">
-            <img class="produto" src="images/produtos/americano.jpg" alt="café americano servido em uma xícara branca">
-            <div class="descricao">
-              <h6>americano</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+
+      <div id="bebidasQuentes">
+        <div class="item">
+          <img class="produto" src="images/produtos/cappuccino.jpg" alt="cappuccino em um copo branco">
+          <div class="descricao">
+            <h6>cappuccino</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
         </div>
-
-        <!--Doces-->
-
-        <div id="doces" style="display: none;">
-          <div class="item">
-            <img class="produto" src="images/produtos/brownie.jpg" alt="brownie">
-            <div class="descricao">
-              <h6>Brownie</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/cookie.jpg" alt="cookie">
-            <div class="descricao">
-              <h6>Cookie</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/tortadelimão.jpg" alt="torta de limão">
-            <div class="descricao">
-              <h6>Torta de limão</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/donuts.jpg" alt="donuts">
-            <div class="descricao">
-              <h6>Donuts</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item" style="margin-right: 0">
-            <img class="produto" src="images/produtos/brigadeiro.jpg" alt="brigadeiro">
-            <div class="descricao">
-              <h6>Brigadeiro</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/expresso.jpg" alt="dois cafés expressos servidos em copos de vidro">
+          <div class="descricao">
+            <h6>expresso</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
         </div>
-        
-        <!--Salgados-->
-        <div id="salgados" style="display:none">
-          <div class="item">
-            <img class="produto" src="images/produtos/pãodequeijo.jpg" alt="pão de queijo">
-            <div class="descricao">
-              <h6>Pão de Queijo</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/pastel.jpg" alt="pastel">
-            <div class="descricao">
-              <h6>Pastel</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item">
-            <img class="produto" src="images/produtos/sanduiche.jpg" alt="sanduiche">
-            <div class="descricao">
-              <h6>Sanduíche</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
-          </div>
-          <div class="item" style="margin-right: 0">
-            <img class="produto" src="images/produtos/coxinha.jpg" alt="coxinha">
-            <div class="descricao">
-              <h6>Coxinha</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/chocolatequente.jpg" alt="Chocolate quente">
+          <div class="descricao">
+            <h6>Chocolate quente</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
         </div>
+        <div class="item" style="margin-right: 0">
+          <img class="produto" src="images/produtos/americano.jpg" alt="café americano servido em uma xícara branca">
+          <div class="descricao">
+            <h6>americano</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+      </div>
 
-        <!--Bebidas Geladas-->
-        <div id="bebidasGeladas" style="display: none;">
-          <div class="item" id="cafeGelado">
-            <img class="produto" src="images/produtos/cafégelado.jpg" alt="Café gelado">
-            <div class="descricao">
-              <h6>Café gelado</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+      <!--Doces-->
+
+      <div id="doces" style="display: none;">
+        <div class="item">
+          <img class="produto" src="images/produtos/brownie.jpg" alt="brownie">
+          <div class="descricao">
+            <h6>Brownie</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
-          <div class="item" id="chaGelado">
-            <img class="produto" src="images/produtos/chágelado.jpg" alt="Chá gelado">
-            <div class="descricao">
-              <h6>Chá gelado</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+        </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/cookie.jpg" alt="cookie">
+          <div class="descricao">
+            <h6>Cookie</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
-          <div class="item" id="milkshake">
-            <img class="produto" src="images/produtos/milkshake.jpg" alt="Milkshake">
-            <div class="descricao">
-              <h6>Milkshake</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+        </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/tortadelimão.jpg" alt="torta de limão">
+          <div class="descricao">
+            <h6>Torta de limão</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
-          <div class="item" style="margin-right: 0" id="affogato">
-            <img class="produto" src="images/produtos/affogato.jpg" alt="Affogato">
-            <div class="descricao">
-              <h6>Affogato</h6>
-              <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
-            </div>
+        </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/donuts.jpg" alt="donuts">
+          <div class="descricao">
+            <h6>Donuts</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item" style="margin-right: 0">
+          <img class="produto" src="images/produtos/brigadeiro.jpg" alt="brigadeiro">
+          <div class="descricao">
+            <h6>Brigadeiro</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+      </div>
+      
+      <!--Salgados-->
+
+      <div id="salgados" style="display:none">
+        <div class="item">
+          <img class="produto" src="images/produtos/pãodequeijo.jpg" alt="pão de queijo">
+          <div class="descricao">
+            <h6>Pão de Queijo</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/pastel.jpg" alt="pastel">
+          <div class="descricao">
+            <h6>Pastel</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item">
+          <img class="produto" src="images/produtos/sanduiche.jpg" alt="sanduiche">
+          <div class="descricao">
+            <h6>Sanduíche</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item" style="margin-right: 0">
+          <img class="produto" src="images/produtos/coxinha.jpg" alt="coxinha">
+          <div class="descricao">
+            <h6>Coxinha</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+      </div>
+
+      <!--Bebidas Geladas-->
+      
+      <div id="bebidasGeladas" style="display: none;">
+        <div class="item" id="cafeGelado">
+          <img class="produto" src="images/produtos/cafégelado.jpg" alt="Café gelado">
+          <div class="descricao">
+            <h6>Café gelado</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item" id="chaGelado">
+          <img class="produto" src="images/produtos/chágelado.jpg" alt="Chá gelado">
+          <div class="descricao">
+            <h6>Chá gelado</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item" id="milkshake">
+          <img class="produto" src="images/produtos/milkshake.jpg" alt="Milkshake">
+          <div class="descricao">
+            <h6>Milkshake</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
+          </div>
+        </div>
+        <div class="item" style="margin-right: 0" id="affogato">
+          <img class="produto" src="images/produtos/affogato.jpg" alt="Affogato">
+          <div class="descricao">
+            <h6>Affogato</h6>
+            <button class="detalhes" onclick="ativaInformacoes()"><em class="bi bi-card-heading"></em></button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Footer-->
-    <footer class="p-3 text-white text-center position-relative fundo-marrom">
-      <div class="container">
-        <p class="lead">Copyright &copy; 2022 Café Margoso</p>
-      </div>
-    </footer>
+  <!--Footer-->
 
-    <div id="container-informacoes" class="fixed-top">
-      <div class="informacoes">
-        <div class="botao">
-          <button style="padding:0; width: 8%;" onclick="escondeInformacoes()">
-            <em class="bi bi-x-circle-fill"></em>
-          </button>
-        </div>
-        <h1>Produto</h1>
-        <hr>
-        <p>Valor: 15,50</p>
-        <hr>
-        <p>Ingredientes: aguá, café, leite, açúcar</p>
-        <hr>
-        <p>Sem glúten</p>
-      </div>
+  <footer class="p-3 text-white text-center position-relative fundo-marrom">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2022 Café Margoso</p>
     </div>
+  </footer>
+
+  <!--pop-up informações-->
+
+  <div id="container-informacoes" class="fixed-top">
+    <div class="informacoes">
+      <div class="botao">
+        <button style="padding:0; width: 8%;" onclick="escondeInformacoes()">
+          <em class="bi bi-x-circle-fill"></em>
+        </button>
+      </div>
+      <h1>Produto</h1>
+      <hr>
+      <p>Valor: 15,50</p>
+      <hr>
+      <p>Ingredientes: aguá, café, leite, açúcar</p>
+      <hr>
+      <p>Sem glúten</p>
+    </div>
+  </div>
+
 </body>
 </html>
