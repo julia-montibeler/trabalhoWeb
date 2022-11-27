@@ -1,0 +1,66 @@
+body, html {
+    font-family: 'Jost', sans-serif;
+}
+
+#header {
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header .navbar-collapse {
+    width: auto;
+}
+
+@media screen and ( max-width : 450px ) {
+    .header_logo {
+        display: none;
+    }
+}
+
+.nav-link {
+    border-bottom: solid 2px transparent;
+    color: black;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    border-bottom: solid 2px black;
+}
+
+.header_logo {
+    padding-top: 30px;
+}
+
+.ativaNoHover {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    cursor: pointer;
+    padding: 0%;
+    margin-top: 0%;   
+}
+
+.ativaNoHover:hover {
+    background-image: url(../images/logo-girando.gif);
+}
+
+.marrom {
+    color: chocolate;
+}
+
+.fundo-marrom {
+    background-color: chocolate;
+}
+
+.imagem-carousel {
+    max-width: 50%;
+}
+
+#botao-saiba-mais:hover {
+    background-color : rgb(112,89,87);
+}
